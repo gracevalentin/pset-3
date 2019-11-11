@@ -8,14 +8,7 @@ const Value1 = Number(readlineSync.question("\nEnter three numbers. \n\n"));
 const Value2 = Number(readlineSync.question(""));
 const Value3 = Number(readlineSync.question(""));
 
-if (Value1!=0) {
-    console.log("\nInvalid.\n")
-} else if (Value2!=0) {
-    console.log("\nInvalid.\n")
-} else if (Value3!=0) {
-    console.log("\nInvalid.\n")
-
-} else if (Value1 < Value2 && Value2 < Value3) {
+if (Value1 < Value2 && Value2 < Value3) {
     console.log("\nStrictly Increasing.\n")
 } else if (Value1 > Value2 && Value2 > Value3) {
     console.log("\nStrictly Decreasing.\n")
@@ -33,10 +26,11 @@ if (Value1!=0) {
     console.log("\nDecreasing.\n")
 
 } else if (Value1 > Value2 && Value2 < Value3) {
-    console.log("\nUnordered.")
+    console.log("\nUnordered.\n")
 } else if (Value1 < Value2 && Value2 > Value3) {
-    console.log("\nUnordered.")
+    console.log("\nUnordered.\n")
+
 
 } else {
-    console.log("\nInvalid.")
+    console.log("\nInvalid.\n")
 }
